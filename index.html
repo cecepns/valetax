@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Gulp with TailwindCSS v3</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body class="w-full">
+  <header class="px-4 lg:px-24 z-10 fixed w-full py-8 bg-slate-900 top-0">
+    <img src="img/valetax-logo.svg" alt="logo" class="w-24 h-auto" />
+  </header>
+
+  <main class="overflow-x-hidden space-y-14">
+    <!-- SECTION 1 -->
+    <section class="mt-28 mx-4 lg:mx-24">
+      <div class="rounded-xl p-3 md:p-8 bg-gray-50 ">
+
+        <div class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-5">
+          <!-- Left Side -->
+          <div class="max-w-xl text-center lg:text-left">
+            <a href="https://ma.valetaxid.com/p/2549174" target="_blank"
+              class="block md:hidden mb-5 px-6 py-3 bg-black text-white font-semibold rounded-md hover:bg-gray-800 transition">
+              Buat Akun
+            </a>
+
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+              Dapatkan investasi terbaik Anda melalui
+              <span class="text-green-500">Keunggulan</span> kondisi pasar
+            </h2>
+            <p class="mt-4 text-lg text-gray-600">
+              Buat perbedaan portofolio Anda dan arahkan ke berbagai pasar dengan stabilitas dan keandalan.
+            </p>
+            <div class="mt-6 flex flex-col sm:flex-row sm:items-center gap-4">
+              <a href="https://ma.valetaxid.com/p/2549174" target="_blank"
+                class="hidden md:block px-6 py-3 bg-black text-white font-semibold rounded-md hover:bg-gray-800 transition">
+                Buat Akun
+              </a>
+              <div class="flex flex-col items-start gap-2">
+                <img src="img/logo-trust-2.svg" alt="Trustpilot" class="h-5 w-auto" />
+                <img src="img/stars-2.svg" alt="Trustpilot" class="h-5 w-auto" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side -->
+          <div class="flex">
+            <img src="img/bg-phone-2.png" alt="Phone 1" class="w-full h-auto" />
+          </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6">
+          <div class="flex flex-wrap items-center gap-3 rounded-lg bg-white p-5">
+            <img src="img/pips-1.svg" alt="logo" />
+            <div>
+              <p class="text-xl font-bold text-gray-900 my-2">0.0 Pip</p>
+              <p class="text-gray-500 text-sm">Spread Dari</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center gap-3 rounded-lg bg-white p-5">
+            <img src="img/2000-1.svg" alt="logo" />
+            <div>
+              <p class="text-xl font-bold text-gray-900 my-2">2000</p>
+              <p class="text-gray-500 text-sm">Leverage Maks</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center gap-3 rounded-lg bg-white p-5">
+            <img src="img/mindeposit-1.svg" alt="logo" />
+            <div>
+              <p class="text-xl font-bold text-gray-900 my-2">$1</p>
+              <p class="text-gray-500 text-sm">Deposit Minimal</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center gap-3 rounded-lg bg-white p-5">
+            <img src="img/classes.svg" alt="logo" />
+            <div>
+              <p class="text-xl font-bold text-gray-900 my-2">6</p>
+              <p class="text-gray-500 text-sm">Kelas aset</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment Providers -->
+      <div class="mt-20">
+        <h3 class="text-3xl md:text-4xl md:max-w-2xl font-bold text-gray-900">
+          Kami bekerja sama dengan <span class="text-green-500">penyedia</span> pembayaran terkemuka untuk menyediakan
+          cara pembayaran yang paling lokal dan lancar
+        </h3>
+        <div class="md:max-w-3xl mt-8 flex items-center flex-wrap gap-3 grayscale">
+          <img src="img/payment/logo-fpx.svg" alt="FPX" />
+          <img src="img/payment/logo-boots.svg" alt="Boost" />
+          <img src="img/payment/logo-grab.svg" alt="GrabPay" />
+          <img src="img/payment/logo-touch.svg" alt="TouchNGo" />
+          <img src="img/payment/logo-pay.svg" alt="ShopeePay" />
+          <img src="img/payment/logo-ris.svg" alt="QRIS" />
+          <img src="img/payment/logo-ovo.svg" alt="OVO" />
+          <img src="img/payment/logo-link.svg" alt="LinkAja" />
+          <img src="img/payment/logo-netteller.svg" alt="NETELLER" />
+          <img src="img/payment/logo-pm.png" class="w-11 h-full" alt="pm" />
+          <img src="img/payment/logo-dana.svg" alt="DANA" />
+          <img src="img/payment/logo-visa.svg" alt="VISA" />
+          <img src="img/payment/logo-mc.svg" alt="VISA" />
+          <img src="img/payment/logo-usdt.svg" alt="USDT" />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 2 -->
+    <section class="mx-4 lg:mx-24">
+      <div class="max-w-7xl grid md:grid-cols-2 justify-center items-center">
+        <!-- Laptop Image -->
+        <img src="img/pop-inst-book.png" alt="Laptop" class="w-full h-auto" />
+
+        <!-- Feature Content -->
+        <div class="w-full">
+          <h4 class="text-green-500 font-semibold uppercase tracking-wide">Fitur</h4>
+          <h2 class="mt-2 text-3xl md:text-5xl font-bold text-gray-900 leading-snug">
+            Akses instrumen paling populer di Pasar
+          </h2>
+
+          <div class="mt-6 space-y-4">
+            <div class="flex gap-5">
+              <div
+                class="bg-green-100 w-10 h-10 text-green-600 rounded-full flex items-center justify-center font-bold">
+                <img src="img/instrument/icn-forex.svg" class="w-6 h-6 object-contain" alt="Forex" />
+              </div>
+              <div class="w-[220px] max-w-full md:w-96">
+                <h3 class="font-semibold text-gray-900">Pasangan Mata Uang</h3>
+                <p class="text-gray-600 text-sm">Dapatkan akses ke 60+ pasangan mata uang dengan eksekusi lancar dan
+                  spread rendah.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-5">
+              <div
+                class="bg-green-100 w-10 h-10 text-green-600 rounded-full flex items-center justify-center font-bold">
+                <img src="img/instrument/icn-stocs.svg" class="w-6 h-6 object-contain" alt="Indices" />
+              </div>
+              <div class="w-[220px] max-w-full md:w-96">
+                <h3 class="font-semibold text-gray-900">Indices</h3>
+                <p class="text-gray-600 text-sm">Berinvestasi dalam indeks dengan komisi nol dan ketentuan lanjutan.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-5">
+              <div
+                class="bg-green-100 w-10 h-10 text-green-600 rounded-full flex items-center justify-center font-bold">
+                <img src="img/instrument/icn-metals.svg" class="w-6 h-6 object-contain" alt="Logam" />
+              </div>
+              <div class="w-[220px] max-w-full md:w-96">
+                <h3 class="font-semibold text-gray-900">Logam</h3>
+                <p class="text-gray-600 text-sm">Buat perbedaan portofolio Anda dan buat spekulasi pergerakan harga Emas
+                  dan Perak.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-5">
+              <div
+                class="bg-green-100 w-10 h-10 text-green-600 rounded-full flex items-center justify-center font-bold">
+                <img src="img/instrument/icn-Cryptocurrencies.svg" class="w-6 h-6 object-contain" alt="Kripto" />
+              </div>
+              <div class="w-[220px] max-w-full md:w-96">
+                <h3 class="font-semibold text-gray-900">Kripto</h3>
+                <p class="text-gray-600 text-sm">Perdagangkan beragam aset digital dan dapatkan keuntungan dari
+                  fluktuasi pasar.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-5">
+              <div
+                class="bg-green-100 w-10 h-10 text-green-600 rounded-full flex items-center justify-center font-bold">
+                <img src="img/instrument/icn-energies.svg" class="w-6 h-6 object-contain" alt="Energi" />
+              </div>
+              <div class="w-[220px] max-w-full md:w-96">
+                <h3 class="font-semibold text-gray-900">Energi</h3>
+                <p class="text-gray-600 text-sm">Perdagangkan instrumen energi tingkat atas dengan kondisi yang
+                  disesuaikan untuk memberdayakan strategi Anda.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <a href="https://ma.valetaxid.com/p/2549174" target="_blank"
+              class="inline-block px-6 py-3 bg-black text-white font-medium rounded-md hover:bg-gray-800 transition">
+              Buat Akun
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 3 -->
+    <section class="mx-4 lg:mx-24 text-center">
+      <h3 class="text-green-600 font-semibold uppercase">Pilih Akun</h3>
+      <h2 class="text-3xl font-bold mt-2">Jenis akun untuk setiap tujuan</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto mt-4">
+        Kami telah menyesuaikan akun kami agar selaras dengan tujuan dan strategi perdagangan Anda, memberikan solusi
+        untuk mengoptimalkan pengalaman perdagangan Anda
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-6xl mx-auto">
+        <!-- Akun Cent -->
+        <div class="border rounded-lg p-6">
+          <div class="flex justify-center mb-4">
+            <div class="p-3">
+              <!-- Icon placeholder -->
+              <img src="img/jenis-akun/cent-acc.svg" alt="jenis akun" />
+            </div>
+          </div>
+          <h3 class="font-semibold text-lg">Akun Cent</h3>
+          <p class="text-gray-600 mt-2">Mulai perdagangan dari 1 USD</p>
+          <p class="text-sm text-gray-500 mt-4">Spread: mulai dari 1,2 pip</p>
+          <a href="https://ma.valetaxid.com/p/2549174" target="_blank"
+            class="text-green-600 font-medium mt-4 inline-block">Pilih Akun →</a>
+        </div>
+
+        <!-- Akun Standar -->
+        <div class="border rounded-lg p-6 bg-slate-900 text-white">
+          <div class="flex justify-center mb-4">
+            <div class="p-3">
+              <!-- Icon placeholder -->
+              <img src="img/jenis-akun/standart.svg" alt="jenis akun" />
+            </div>
+          </div>
+          <h3 class="font-semibold text-lg">Akun Standar</h3>
+          <p class="mt-2">Berdaganglah dengan jenis akun paling populer</p>
+          <p class="text-sm text-gray-300 mt-4">Spread: mulai dari 1,2 pip</p>
+          <a href="#" class="text-green-400 font-medium mt-4 inline-block">Pilih Akun →</a>
+        </div>
+
+        <!-- Akun ECN -->
+        <div class="border rounded-lg p-6">
+          <div class="flex justify-center mb-4">
+            <div class="p-3">
+              <!-- Icon placeholder -->
+              <img src="img/jenis-akun/pro-acc.svg" alt="jenis akun" />
+            </div>
+          </div>
+          <h3 class="font-semibold text-lg">Akun ECN</h3>
+          <p class="text-gray-600 mt-2">Rasakan kekuatan akses pasar langsung untuk perdagangan Anda</p>
+          <p class="text-sm text-gray-500 mt-4">Spread: mulai dari 0.0 pip</p>
+          <a href="https://ma.valetaxid.com/p/2549174" target="_blank"
+            class="text-green-600 font-medium mt-4 inline-block">Pilih Akun →</a>
+        </div>
+
+        <!-- Booster Account -->
+        <div class="border rounded-lg p-6">
+          <div class="flex justify-center mb-4">
+            <div class="p-3">
+              <!-- Icon placeholder -->
+              <img src="img/jenis-akun/icn-booster.svg" alt="jenis akun" />
+            </div>
+          </div>
+          <h3 class="font-semibold text-lg">Booster Account</h3>
+          <p class="text-gray-600 mt-2">Dapatkan Rebate Tertinggi untuk Anda, jaringan Anda, dan para trader</p>
+          <p class="text-sm text-gray-500 mt-4">Spread mulai 2.0pip</p>
+          <a href="https://ma.valetaxid.com/p/2549174" target="_blank"
+            class="text-green-600 font-medium mt-4 inline-block">Pilih Akun →</a>
+        </div>
+
+        <!-- Bonus Account -->
+        <div class="border rounded-lg p-6">
+          <div class="flex justify-center mb-4">
+            <div class="p-3">
+              <!-- Icon placeholder -->
+              <img src="img/jenis-akun/icn-bonus.svg" alt="jenis akun" />
+            </div>
+          </div>
+          <h3 class="font-semibold text-lg">Bonus Account</h3>
+          <p class="text-gray-600 mt-2">Tingkatkan ekuitas dengan bonus yang tersedia</p>
+          <p class="text-sm text-gray-500 mt-4">Spread mulai 2.0pip</p>
+          <a href="https://ma.valetaxid.com/p/2549174" target="_blank"
+            class="text-green-600 font-medium mt-4 inline-block">Pilih Akun →</a>
+        </div>
+
+        <!-- Akun PRO -->
+        <div class="border rounded-lg p-6">
+          <div class="flex justify-center mb-4">
+            <div class="p-3">
+              <!-- Icon placeholder -->
+              <img src="img/jenis-akun/icn-pro-9.svg" alt="jenis akun" />
+            </div>
+          </div>
+          <h3 class="font-semibold text-lg">Akun PRO</h3>
+          <p class="text-gray-600 mt-2">Spread sangat rendah dan tanpa komisi, dirancang khusus untuk trader
+            berpengalaman</p>
+          <p class="text-sm text-gray-500 mt-4">Spread: mulai dari 0.6 pip</p>
+          <a href="https://ma.valetaxid.com/p/2549174" target="_blank"
+            class="text-green-600 font-medium mt-4 inline-block">Pilih Akun →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section class="bg-slate-900 text-white py-16 px-4">
+      <div class="mx-4 lg:mx-24 text-center text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold">
+          Mengapa <span class="text-green-500">Berdagang</span> bersama kami?
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-10 mt-12 text-left">
+          <!-- Item -->
+          <div class="flex items-start space-x-4">
+            <div class="bg-[#1f2a37] h-11 w-11 p-3 rounded-full">
+              <img class="w-full h-full object-cover" src="img/icon-dagang/icn-arrows.svg" alt="icon-dagang" />
+            </div>
+            <div class="w-64 md:w-96">
+              <h3 class="font-semibold">Spread mulai dari 0.0 pips</h3>
+              <p class="text-gray-400 text-sm mt-1">
+                Dengan menawarkan spread ketat yang kompetitif, kami membantu memaksimalkan margin keuntungan Anda.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="flex items-start space-x-4">
+            <div class="bg-[#1f2a37] h-11 w-11 p-3 rounded-full">
+              <img class="w-full h-full object-cover" src="img/icon-dagang/icn-free.svg" alt="icon-dagang" />
+            </div>
+            <div class="w-64 md:w-96">
+              <h3 class="font-semibold">Perdagangan Bebas Komisi</h3>
+              <p class="text-gray-400 text-sm mt-1">
+                Manfaatkan model perdagangan bebas komisi kami, untuk pengalaman bebas repot.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="flex items-start space-x-4">
+            <div class="bg-[#1f2a37] h-11 w-11 p-3 rounded-full">
+              <img class="w-full h-full object-cover" src="img/icon-dagang/icn-lightning.svg" alt="icon-dagang" />
+            </div>
+            <div class="w-64 md:w-96">
+              <h3 class="font-semibold">Penarikan Cepat dan Aman</h3>
+              <p class="text-gray-400 text-sm mt-1">
+                Kami memberikan Anda ketenangan pikiran, dengan proses penarikan yang cepat dan aman.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="flex items-start space-x-4">
+            <div class="bg-[#1f2a37] h-11 w-11 p-3 rounded-full">
+              <img class="w-full h-full object-cover" src="img/icon-dagang/icn-security.svg" alt="icon-dagang" />
+            </div>
+            <div class="w-64 md:w-96">
+              <h3 class="font-semibold">Keamanan Dana</h3>
+              <p class="text-gray-400 text-sm mt-1">
+                Keamanan dana Anda terjamin, dengan mempertahankan akun klien yang sepenuhnya terpisah.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="flex items-start space-x-4">
+            <div class="bg-[#1f2a37] h-11 w-11 p-3 rounded-full">
+              <img class="w-full h-full object-cover" src="img/icon-dagang/icn-swing.svg" alt="icon-dagang" />
+            </div>
+            <div class="w-64 md:w-96">
+              <h3 class="font-semibold">Leverage hingga 1:2000</h3>
+              <p class="text-gray-400 text-sm mt-1">
+                Nikmati potensi penuh dari perdagangan Anda dengan leverage 1:2000 kami yang luar biasa.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="flex items-start space-x-4">
+            <div class="bg-[#1f2a37] h-11 w-11 p-3 rounded-full">
+              <img class="w-full h-full object-cover" src="img/icon-dagang/icn-service.svg" alt="icon-dagang" />
+            </div>
+            <div class="w-64 md:w-96">
+              <h3 class="font-semibold">Layanan Pelanggan 24/7</h3>
+              <p class="text-gray-400 text-sm mt-1">
+                Tim dukungan kami tersedia 24/7 yang memberikan Anda bantuan cepat, kapan saja di mana saja.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="flex items-start space-x-4">
+            <div class="bg-[#1f2a37] h-11 w-11 p-3 rounded-full">
+              <img class="w-full h-full object-cover" src="img/icon-dagang/icn-fast.svg" alt="icon-dagang" />
+            </div>
+            <div class="w-64 md:w-96">
+              <h3 class="font-semibold">Orientasi Sangat Cepat dan Lancar</h3>
+              <p class="text-gray-400 text-sm mt-1">
+                Telusuri proses orientasi kami yang secepat kilat dan lancar.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="flex items-start space-x-4">
+            <div class="bg-[#1f2a37] h-11 w-11 p-3 rounded-full">
+              <img class="w-full h-full object-cover" src="img/icon-dagang/icn-download.svg" alt="icon-dagang" />
+            </div>
+            <div class="w-64 md:w-96">
+              <h3 class="font-semibold">Deposit dengan penyedia lokal</h3>
+              <p class="text-gray-400 text-sm mt-1">
+                Kami menyediakan deposit bebas repot dengan penyedia lokal dan terpercaya kami, membuatnya mudah.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 -->
+    <section class="mx-4 lg:mx-24">
+      <div
+        class="bg-gray-50 rounded-xl bg-no-repeat md:!bg-contain bg-position-left pt-12 md:p-11 bg-[url(/img/map-desk-new.svg)]"
+        style="background-size: 235% auto;">
+        <div>
+          <div class="mx-4 lg:mx-24 flex justify-end pt-56 pb-5 md:py-12">
+            <div class="md:w-1/2">
+              <p class="text-green-600 font-semibold uppercase text-sm mb-2">Fitur</p>
+              <h2 class="text-3xl font-bold text-gray-900 mb-4">Menciptakan Nilai dengan Komitmen</h2>
+              <p class="text-gray-600 md:mb-8">
+                Valetax beroperasi di 15 wilayah dan punya lebih 300 ribu pelanggan. Regulasi di dua yurisdiksi dan
+                kerja
+                sama dengan penyedia pembayaran berlisensi mengungguli kinerja klien.
+              </p>
+            </div>
+          </div>
+
+          <div class="mx-4 lg:mx-24">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div class="bg-white p-4 rounded-xl shadow">
+                <div class="flex items-center space-x-2 mb-2">
+                  <span class="text-green-500 text-xl">🌍</span>
+                  <h3 class="font-semibold text-gray-900">Dinamis</h3>
+                </div>
+                <p class="text-sm text-gray-600">Memiliki 300,000+ klien di seluruh dunia</p>
+              </div>
+              <div class="bg-white p-4 rounded-xl shadow">
+                <div class="flex items-center space-x-2 mb-2">
+                  <span class="text-green-500 text-xl">✅</span>
+                  <h3 class="font-semibold text-gray-900">Terpercaya</h3>
+                </div>
+                <p class="text-sm text-gray-600">Sesuai dengan standar dan peraturan khusus industri</p>
+              </div>
+              <div class="bg-white p-4 rounded-xl shadow">
+                <div class="flex items-center space-x-2 mb-2">
+                  <span class="text-green-500 text-xl">🔒</span>
+                  <h3 class="font-semibold text-gray-900">Terakreditasi</h3>
+                </div>
+                <p class="text-sm text-gray-600">Saluran pembayaran yang aman dan tepercaya</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 -->
+    <section class="mx-4 lg:mx-24">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center gap-12">
+
+        <!-- LEFT TEXT -->
+        <div class="w-full lg:w-1/2 text-center lg:text-left">
+          <p class="text-green-600 font-semibold uppercase mb-2">Siap untuk berdagang?</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Perdagangkan dari segala perangkat
+          </h2>
+          <p class="text-gray-600 mb-8">
+            Nikmati kemudahan mengakses akun perdagangan saat bepergian, memantau portofolio,
+            menempatkan perdagangan, dan melacak kemajuan Anda.
+          </p>
+          <a href="https://ma.valetaxid.com/p/2549174" target="_blank"
+            class="inline-block bg-black text-white font-semibold px-6 py-3 rounded-md hover:bg-gray-800 transition">
+            Memulai
+          </a>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="w-full lg:w-1/2 relative">
+          <img src="img/trade-grafic-1.png" alt="Trading Devices" class="w-full h-auto mx-auto">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 7 -->
+    <section class="bg-white py-20">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <p class="text-green-600 font-semibold uppercase mb-2">SIAP UNTUK MEMULAI?</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+          Siapkan akun Anda dalam 3 langkah mudah
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+
+          <!-- Langkah 1 -->
+          <div>
+            <div class="text-6xl font-bold text-gray-200 mb-2">1</div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Daftar</h3>
+            <p class="text-gray-600">Buatlah jenis akun perdagangan pilihan Anda</p>
+          </div>
+
+          <!-- Langkah 2 -->
+          <div>
+            <div class="text-6xl font-bold text-gray-200 mb-2">2</div>
+            <h3 class="text-xl font-semibold text-green-600 mb-2">Dana</h3>
+            <p class="text-gray-600">Danai akun Anda dengan opsi berlisensi yang tersedia</p>
+          </div>
+
+          <!-- Langkah 3 -->
+          <div>
+            <div class="text-6xl font-bold text-gray-200 mb-2">3</div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Dagang & Raih Untung</h3>
+            <p class="text-gray-600">Berdagang dengan cerdas dan maksimalkan keuntungan sekarang</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-4 lg:mx-24">
+      <div class="bg-slate-900 rounded-xl text-white py-20 px-6 relative overflow-hidden h-[540px]">
+        <div class="max-w-5xl mx-auto text-center">
+          <p class="text-green-500 text-lg font-semibold tracking-wide mb-4">MEMULAI</p>
+          <h1 class="text-3xl md:text-4xl font-bold mb-6">
+            Mulailah perdagangan dengan platform kami sekarang
+          </h1>
+          <a href="https://ma.valetaxid.com/p/2549174" target="_blank"
+            class="bg-white text-gray-900 font-semibold px-6 py-3 rounded-md hover:bg-gray-200 transition">
+            Buat Akun
+          </a>
+        </div>
+
+        <div class="flex justify-center mt-12 mx-12">
+          <img src="img/trading-screen.png" class="w-full" alt="trading-screen bottom-5" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 pt-16">
+      <div class="mx-4 lg:mx-24">
+        <div class="text-center mb-12">
+          <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12">
+            <div class="text-sm">
+              <p class="font-semibold text-white">Global Newcomer of the Year</p>
+              <p>Global Forex Awards 2024</p>
+            </div>
+            <div class="text-sm">
+              <p class="font-semibold text-white">Best Introducing Broker Programme (MENA)</p>
+              <p>Global Forex Awards 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-700 pt-10 pb-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8 text-sm">
+            <div>
+              <h3 class="text-white font-semibold mb-4">Support</h3>
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Contact Us</a></li>
+                <li><a href="#" class="hover:underline">How to Deposit</a></li>
+                <li><a href="#" class="hover:underline">How to Withdraw</a></li>
+                <li><a href="#" class="hover:underline">How to Open an Account</a></li>
+                <li><a href="#" class="hover:underline">How to Verify Account</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-white font-semibold mb-4">Platforms</h3>
+              <ul class="space-y-2">
+                <li>MT4 | MT5</li>
+                <li>MT4 Web | MT5 Web</li>
+                <li>MT4 Mobile | MT5 Mobile</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-white font-semibold mb-4">Partners</h3>
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Partnership Website</a></li>
+                <li><a href="#" class="hover:underline">Affiliate Program</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-white font-semibold mb-4">Social Links</h3>
+              <div class="flex space-x-4">
+                <a href="wa.me/6289517045935" target="_blank" class="rounded-full bg-green-50 p-2">
+                  <img src="img/whatsapp.png"/>
+                </a>
+                <a href="https://t.me/fxhappinessgold" target="_blank" class="rounded-full bg-green-50 p-2">
+                  <img src="img/telegram.png"/>
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-white font-semibold mb-4">Payment Channels</h3>
+              <div class="space-y-2">
+                <p>FPX, Boost, GrabPay</p>
+                <p>Neteller, PM, Touch N Go</p>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-white font-semibold mb-4">Download Now</h3>
+              <div class="flex flex-col space-y-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                  alt="Google Play" class="w-32">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                  alt="App Store" class="w-32">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-xs text-gray-400 mt-10 px-4 space-y-4">
+          <p><span class="text-green-400">Valetax International Limited</span> is authorized and regulated by the
+            Mauritius Financial Services Commission “FSC”, license Nr. GB21026312. Address: 1/F River Court, 6 St. Denis
+            Street, Port Louis, 11328, Mauritius.</p>
+          <p><span class="text-green-400">Valetax Global Limited</span> is registered in St. Vincent and Grenadines.
+            Address: Suite 305, Griffith Corporate Centre, Beachmont, P.O Box 1510, Kingstown.</p>
+          <p>Risk Warning: Foreign exchange, leveraged trading, and financial derivatives involve high risk and may
+            result in loss exceeding your initial deposit. Ensure you fully understand the risks and terms.</p>
+          <p>The site is for informational purposes only. Not a solicitation in jurisdictions where such action is
+            unauthorized.</p>
+          <p>Valetax does not provide services to residents of Iran, North Korea, USA, and Singapore.</p>
+          <div class="flex gap-2 pb-5 px-2">
+            <a href="#" class="hover:underline">Risk Disclosure</a>
+            <span>|</span>
+            <a href="#" class="hover:underline">Terms and Conditions</a>
+            <span>|</span>
+            <a href="#" class="hover:underline">AML Policy</a>
+            <span>|</span>
+            <a href="#" class="hover:underline">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+  </main>
+
+</body>
+
+</html>
